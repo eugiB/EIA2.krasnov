@@ -12,8 +12,9 @@ function text1() {
         var node = document.getElementById("xD");
         node.innerHTML += "Hey ";
         node.innerHTML += n;
-        node.innerHTML += "What is love?";
-        console.log("Hey ", n, "What is love?");
+        node.innerHTML += ", was geht?";
+        
+        console.log("Hey ", n, "was geht?");
     }
     document.addEventListener('DOMContentLoaded', text1);
 }
