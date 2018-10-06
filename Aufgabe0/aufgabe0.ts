@@ -15,7 +15,7 @@ Er wurde nicht kopiert und auch nicht diktiert.
         node.innerHTML += "Hey ";
         node.innerHTML += n;
         node.innerHTML += "Was geht?";
-        console.log("Hey ", n, "Was geht?");
+        console.log("Hey ", n , "was geht?");
         }
     
         document.addEventListener('DOMContentLoaded', text);
