@@ -7,16 +7,16 @@ Er wurde nicht kopiert und auch nicht diktiert.
 */
 
 
+    var n : string = "";
 
 function text1() {
-    var n = "";
     function text() {
-        var n = prompt("Wie lautet dein Name?");
+        var n = prompt ("Wie lautet dein Name?");
         var node = document.getElementById("xD");
         node.innerHTML += "Hey ";
         node.innerHTML += n;
-        node.innerHTML += "What is love?";
-        console.log("Hey ", n, "What is love?");
+        node.innerHTML += "Was geht?";
+        console.log("Hey ", n, "Was geht?");
         }
     
         document.addEventListener('DOMContentLoaded', text1);
