@@ -12,7 +12,7 @@ function text() {
     node.innerHTML += "Hey ";
     node.innerHTML += n;
     node.innerHTML += "Was geht?";
-    console.log("Hey ", n, "Was geht?");
+    console.log("Hey ", n , "was geht?");
 }
 document.addEventListener('DOMContentLoaded', text);
 //# sourceMappingURL=aufgabe0.js.map
