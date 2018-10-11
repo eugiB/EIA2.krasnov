@@ -7,17 +7,14 @@ Er wurde nicht kopiert und auch nicht diktiert.
 */
 
 
-    var n : string = "";
 
-function text1() {
     function text() {
-        var n = prompt ("Wie lautet dein Name?");
-        var node = document.getElementById("xD");
+        var n :string = prompt ("Wie lautet dein Name?");
+        var node: HTMLElement = document.getElementById("xD");
         node.innerHTML += "Hey ";
         node.innerHTML += n;
         node.innerHTML += "Was geht?";
-        console.log("Hey ", n, "Was geht?");
+        console.log("Hey ", n, " was geht?");
         }
     
-        document.addEventListener('DOMContentLoaded', text1);
- }
+        document.addEventListener('DOMContentLoaded', text);
