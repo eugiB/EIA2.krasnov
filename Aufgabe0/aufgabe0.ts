@@ -7,14 +7,14 @@ Er wurde nicht kopiert und auch nicht diktiert.
 */
 
 
-
     function text() {
-        var n :string = prompt ("Wie lautet dein Name?");
+        var n:string = prompt ("Wie lautet dein Name?");
         var node: HTMLElement = document.getElementById("xD");
         node.innerHTML += "Hey ";
         node.innerHTML += n;
-        node.innerHTML += "Was geht?";
-        console.log("Hey ", n, " was geht?");
+        node.innerHTML += " was geht?";
+        console.log("Hey ", n , " was geht?");
+>>>>>>> branch 'master' of https://github.com/eugiB/EIA2.krasnov/
         }
     
         document.addEventListener('DOMContentLoaded', text);
