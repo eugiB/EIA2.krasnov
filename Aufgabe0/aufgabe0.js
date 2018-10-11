@@ -5,27 +5,13 @@ Datum: 05.10.2018
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe.
 Er wurde nicht kopiert und auch nicht diktiert.
 */
-<<<<<<< HEAD
 function text() {
     var n = prompt("Wie lautet dein Name?");
     var node = document.getElementById("xD");
     node.innerHTML += "Hey ";
     node.innerHTML += n;
-    node.innerHTML += "Was geht?";
+    node.innerHTML += " was geht?";
     console.log("Hey ", n, " was geht?");
 }
 document.addEventListener('DOMContentLoaded', text);
 //# sourceMappingURL=aufgabe0.js.map
-=======
-var n = "";
-function text() {
-    var n = prompt("Wie lautet dein Name?");
-    var node = document.getElementById("xD");
-    node.innerHTML += "Hey ";
-    node.innerHTML += n;
-    node.innerHTML += "Was geht?";
-    console.log("Hey ", n , "was geht?");
-}
-document.addEventListener('DOMContentLoaded', text);
-//# sourceMappingURL=aufgabe0.js.map
->>>>>>> branch 'master' of https://github.com/eugiB/EIA2.krasnov/

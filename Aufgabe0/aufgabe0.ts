@@ -14,7 +14,6 @@ Er wurde nicht kopiert und auch nicht diktiert.
         node.innerHTML += n;
         node.innerHTML += " was geht?";
         console.log("Hey ", n , " was geht?");
->>>>>>> branch 'master' of https://github.com/eugiB/EIA2.krasnov/
         }
     
         document.addEventListener('DOMContentLoaded', text);
