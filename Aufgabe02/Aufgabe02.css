@@ -1,0 +1,113 @@
+.blue{
+	background-color:Blue;
+	color:White;
+	border-radius:10px;
+	width:100px;
+	height:250px;
+	border:thin solid black;
+	margin:20px;
+	text-align:center;
+	display:inline-block;
+	
+	
+}
+
+.yellow{
+	background-color:yellow;
+	color:Black;
+	border-radius:10px;
+	width:100px;
+	height:250px;
+	border:thin solid black;
+	margin:20px;
+		text-align:center;
+		display:inline-block;
+		
+		
+	
+}
+
+.green{
+	background-color:Green;
+	color:Black;
+	border-radius:10px;
+	width:100px;
+	height:250px;
+	border:thin solid black;
+	margin:20px;
+		text-align:center;
+		display:inline-block;
+}
+
+.red{
+	background-color:red;
+	color:Black;
+	border-radius:10px;
+	width:100px;
+	height:250px;
+	border:thin solid black;
+	margin:20px;
+		text-align:center;
+		display:inline-block;
+		
+		
+	
+}
+
+.black{
+	background-color:black;
+	color:White;
+	border-radius:10px;
+	width:100px;
+	height:250px;
+	border:thin solid black;
+	margin:20px;
+	text-align:center;
+	display:inline-block;	
+		bottom:10px;
+		
+}
+
+.div_hand{
+	
+	border:solid black 2px;
+	position:fixed;
+	background-color:#c5972e;
+	margin:0% 20% 0% 20%;
+	width:50%;
+	display:inline-block;
+	bottom:0px;
+	padding:auto;
+	
+}
+
+body{
+	width:100%;
+	position:relative;
+}
+
+.div_stapel{
+	position:relative;
+	right:20px;
+	top:20px;
+	background-color:#c80000;
+	Border:solid black 2px;
+	display:block;
+	width:150px;
+	height:250px;
+	float:right;
+}
+
+.div_deck{
+	position:relative;
+	left:20px;
+	top:20px;
+	background-color:#29a9e0;
+	Border:solid black 2px;
+	display:block;
+	width:150px;
+	height:250px;
+	float:left;
+}
+
+
