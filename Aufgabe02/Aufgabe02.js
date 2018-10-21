@@ -13,6 +13,7 @@ var UNO;
     let deck = [];
     let hand = [];
     let num = 0;
+    console.log(Deck);
     function Deck() {
         // Zahlen (0 - 9); Aussetzen (10); Richtungswechsel (11); 2-Ziehen (12); 4-Ziehen (13); Farbwahl (14);
         // blau (0); gelb (1); gr�n (2); rot (3); schwarz (4);
@@ -72,6 +73,10 @@ var UNO;
         div_board.appendChild(div_deck);
         div_hand.classList.add("div_hand");
         div_stapel.classList.add("div_stapel");
+        div_stapel.setAttribute("id", "Stapel");
+        div_deck.setAttribute("id", "Deck");
+        document.getElementById("Stapel").innerHTML += "Ablage";
+        document.getElementById("Deck").innerHTML += "Spieldeck";
         div_board.classList.add("div_board");
         div_deck.classList.add("div_deck");
         let cards = parseInt(prompt("Mit wievielen karten m�chten sie spielen?"), 10);
@@ -101,10 +106,14 @@ var UNO;
             }
             switch (t) {
                 case 0:
+                    div.classList.add("zero");
+                    div.innerHTML = "0";
+                    break;
+                case 1:
                     div.classList.add("one");
                     div.innerHTML = "1";
                     break;
-                case 1:
+                case 2:
                     div.classList.add("two");
                     div.innerHTML = "2";
                     break;

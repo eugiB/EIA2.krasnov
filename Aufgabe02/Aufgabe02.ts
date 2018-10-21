@@ -14,6 +14,7 @@ namespace UNO {
     let hand: number[][] = [];
     let num: number = 0;
 
+    console.log(Deck)
 
     function Deck() {
         // Zahlen (0 - 9); Aussetzen (10); Richtungswechsel (11); 2-Ziehen (12); 4-Ziehen (13); Farbwahl (14);
@@ -63,7 +64,10 @@ namespace UNO {
 
                 default:
                     break;
+
+
             }
+
 
         }
         let div_board: HTMLDivElement = document.createElement("div");
@@ -76,6 +80,10 @@ namespace UNO {
         div_board.appendChild(div_deck);
         div_hand.classList.add("div_hand");
         div_stapel.classList.add("div_stapel");
+        div_stapel.setAttribute("id", "Stapel");
+        div_deck.setAttribute("id", "Deck");
+        document.getElementById("Stapel").innerHTML += "Ablage";
+        document.getElementById("Deck").innerHTML += "Spieldeck";
         div_board.classList.add("div_board");
         div_deck.classList.add("div_deck");
 
@@ -87,8 +95,8 @@ namespace UNO {
             let a: number = generateRandom(0, deck.length);
             let t: number = (deck[a][1]);
             let c: number = (deck[a][0]);
-            
-        switch (c) {
+
+            switch (c) {
                 case 0:
                     div.classList.add("blue", "card");
                     break;
@@ -105,81 +113,86 @@ namespace UNO {
                     div.classList.add("black", "card");
                     break;
             }
-            
-            switch(t) {
-           case 0:
-                div.classList.add("one")
-                div.innerHTML = "1";
-                break;
-                
-            case 1:
-                div.classList.add("two")
-                div.innerHTML = "2";
-                break;
-                
-            case 3:
-                div.classList.add("three")
-                div.innerHTML = "3";
-                break;
-                
-            case 4:
-                div.classList.add("four")
-                div.innerHTML = "4";
-                break;
-                
-            case 5:
-                div.classList.add("five")
-                div.innerHTML = "5";
-                break;
-                
-            case 6:
-                div.classList.add("six")
-                div.innerHTML = "6";
-                break;
-                
-            case 7:
-                div.classList.add("seven")
-                div.innerHTML = "7";
-                break;
-                
-            case 8:
-                div.classList.add("eight")
-                div.innerHTML = "8";
-                break;
-                
-            case 9:
-                div.classList.add("nine")
-                div.innerHTML = "9";
-                break;
-                
-            case 10:
-                div.classList.add("skip")
-                div.innerHTML = "Skip";
-                break;
-                
-            case 11:
-                div.classList.add("direction")
-                div.innerHTML = "<-->";
-                break;
-                
-            case 12:
-                div.classList.add("drawtwo")
-                div.innerHTML = "+2";
-                break;
-                
-            case 13:
-                div.classList.add("drawfour")
-                div.innerHTML = "+4";
-                break;
-                
-            case 14:
-                div.classList.add("choose")
-                div.innerHTML = "Colorchange";
-                break;
 
+            switch (t) {
+                case 0:
+                    div.classList.add("zero")
+                    div.innerHTML = "0";
+                    break;
+
+                case 1:
+                    div.classList.add("one")
+                    div.innerHTML = "1";
+                    break;
+
+                case 2:
+                    div.classList.add("two")
+                    div.innerHTML = "2";
+                    break;
+
+                case 3:
+                    div.classList.add("three")
+                    div.innerHTML = "3";
+                    break;
+
+                case 4:
+                    div.classList.add("four")
+                    div.innerHTML = "4";
+                    break;
+
+                case 5:
+                    div.classList.add("five")
+                    div.innerHTML = "5";
+                    break;
+
+                case 6:
+                    div.classList.add("six")
+                    div.innerHTML = "6";
+                    break;
+
+                case 7:
+                    div.classList.add("seven")
+                    div.innerHTML = "7";
+                    break;
+
+                case 8:
+                    div.classList.add("eight")
+                    div.innerHTML = "8";
+                    break;
+
+                case 9:
+                    div.classList.add("nine")
+                    div.innerHTML = "9";
+                    break;
+
+                case 10:
+                    div.classList.add("skip")
+                    div.innerHTML = "Skip";
+                    break;
+
+                case 11:
+                    div.classList.add("direction")
+                    div.innerHTML = "<-->";
+                    break;
+
+                case 12:
+                    div.classList.add("drawtwo")
+                    div.innerHTML = "+2";
+                    break;
+
+                case 13:
+                    div.classList.add("drawfour")
+                    div.innerHTML = "+4";
+                    break;
+
+                case 14:
+                    div.classList.add("choose")
+                    div.innerHTML = "Colorchange";
+                    break;
+
+            }
         }
     }
-        }
 
     //generateRandom(0,deck.length)
     function generateRandom(min: number, max: number) {
@@ -193,4 +206,4 @@ namespace UNO {
     document.addEventListener('DOMContentLoaded', Deck);
 }
 
-    
+
