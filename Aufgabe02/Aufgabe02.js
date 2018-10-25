@@ -57,7 +57,7 @@ var UNO;
         div_deck.classList.add("div_deck");
         div_stapel.setAttribute("Id", "Stapel");
         document.getElementById("Stapel").innerHTML += "Ablage";
-        document.getElementById("div_Deck").innerHTML += "Spieldeck";
+        document.getElementById("div_deck").innerHTML += "Spieldeck";
         let cards = parseInt(prompt("Mit wievielen karten m�chten sie spielen?"), 10); // 10 steht f�r dezimalzahlsystem //parseInt nimmt Zahlenstystem
         let content;
         for (let i = 0; i < cards; i++) {

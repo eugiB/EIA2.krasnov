@@ -20,7 +20,6 @@ namespace UNO {
         // blau (0); gelb (1); grün (2); rot (3); schwarz (4);
 
 
-
         for (let color: number = 0; color < 5; color++) {
             switch (color) {
                 case 0:
@@ -68,7 +67,7 @@ namespace UNO {
     div_deck.classList.add("div_deck");
     div_stapel.setAttribute("Id", "Stapel");
     document.getElementById("Stapel").innerHTML += "Ablage";
-    document.getElementById("div_Deck").innerHTML += "Spieldeck";
+    document.getElementById("div_deck").innerHTML += "Spieldeck";
 
     let cards = parseInt(prompt("Mit wievielen karten möchten sie spielen?"), 10); // 10 steht für dezimalzahlsystem //parseInt nimmt Zahlenstystem
     let content: string;
