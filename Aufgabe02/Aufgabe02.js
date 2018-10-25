@@ -13,40 +13,20 @@ var UNO;
     let deck = [];
     let hand = [];
     let num = 0;
-    console.log(Deck);
     function Deck() {
         // Zahlen (0 - 9); Aussetzen (10); Richtungswechsel (11); 2-Ziehen (12); 4-Ziehen (13); Farbwahl (14);
         // blau (0); gelb (1); gr�n (2); rot (3); schwarz (4);
-        for (let c = 0; c < 5; c++) {
-            switch (c) {
+        for (let color = 0; color < 5; color++) {
+            switch (color) {
                 case 0:
                 case 1:
                 case 2:
                 case 3:
                     for (let typ = 0; typ < 13; typ++) {
-                        switch (typ) {
-                            case 0:
-                                deck[num] = [c, typ];
-                                num++;
-                                break;
-                            case 1:
-                            case 2:
-                            case 3:
-                            case 4:
-                            case 5:
-                            case 6:
-                            case 7:
-                            case 8:
-                            case 9:
-                            case 10:
-                            case 11:
-                            case 12:
-                                for (let i = 0; i < 2; i++) {
-                                    deck[num] = [c, typ];
-                                    num++;
-                                }
-                                break;
-                            default:
+                        for (let i = 0; i < 2; i++) {
+                            deck[num] = [color, typ];
+                            num++;
+                            if (typ == 0)
                                 break;
                         }
                     }
@@ -54,7 +34,7 @@ var UNO;
                 case 4:
                     for (let typ = 13; typ < 15; typ++) {
                         for (let i = 0; i < 4; i++) {
-                            deck[num] = [c, typ];
+                            deck[num] = [color, typ]; // Schwarz hat nur 2 karten a 4stk.
                             num++;
                         }
                     }
@@ -73,13 +53,12 @@ var UNO;
         div_board.appendChild(div_deck);
         div_hand.classList.add("div_hand");
         div_stapel.classList.add("div_stapel");
-        div_stapel.setAttribute("id", "Stapel");
-        div_deck.setAttribute("id", "Deck");
-        document.getElementById("Stapel").innerHTML += "Ablage";
-        document.getElementById("Deck").innerHTML += "Spieldeck";
         div_board.classList.add("div_board");
         div_deck.classList.add("div_deck");
-        let cards = parseInt(prompt("Mit wievielen karten m�chten sie spielen?"), 10);
+        div_stapel.setAttribute("Id", "Stapel");
+        document.getElementById("Stapel").innerHTML += "Ablage";
+        document.getElementById("div_Deck").innerHTML += "Spieldeck";
+        let cards = parseInt(prompt("Mit wievielen karten m�chten sie spielen?"), 10); // 10 steht f�r dezimalzahlsystem //parseInt nimmt Zahlenstystem
         let content;
         for (let i = 0; i < cards; i++) {
             let div = document.createElement("div");
@@ -170,8 +149,8 @@ var UNO;
     }
     //generateRandom(0,deck.length)
     function generateRandom(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
+        min = Math.ceil(min); //runden
+        max = Math.floor(max); //abrunden
         return Math.floor(Math.random() * (max - min)) + min;
     }
     document.addEventListener('DOMContentLoaded', Deck);
