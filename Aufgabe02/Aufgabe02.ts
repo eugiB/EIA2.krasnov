@@ -69,9 +69,7 @@ namespace UNO {
     document.getElementById("Stapel").innerHTML += "Ablage";
     document.getElementById("div_deck").innerHTML += "Spieldeck";
 
-    let cards = parseInt(prompt("Mit wievielen karten möchten sie spielen?"), 10); // 10 steht für dezimalzahlsystem //parseInt nimmt Zahlenstystem
-    let content: string;
-    for (let i: number = 0; i < cards; i++) {
+    {
         let div: HTMLDivElement = document.createElement("div");
         div_hand.appendChild(div);
         let a: number = generateRandom(0, deck.length);
@@ -179,6 +177,11 @@ namespace UNO {
 
 }
 
+    
+     let cards = parseInt(prompt("Mit wievielen karten möchten sie spielen?"), 10); // 10 steht für dezimalzahlsystem //parseInt nimmt Zahlenstystem
+    let content: string;
+    for (let i: number = 0; i < cards; i++);
+    
 //generateRandom(0,deck.length)
 function generateRandom(min: number, max: number) {
     min = Math.ceil(min);  //runden
